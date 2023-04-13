@@ -1,0 +1,22 @@
+<p>user works!</p>
+<input type="text" #txt>
+<input type="button" value="click" (click)="val(txt.value)">
+<br/>
+<h2>
+ {{title | uppercase}}
+<br/>
+</h2>
+<h2>
+ {{title | slice : 5 : 10 | uppercase}}
+<br/>
+</h2>
+<br/>
+{{user | json |uppercase}}
+<br/>
+<h3>
+{{data | number :'3.2-2'}}
+<br>
+{{0002000.3000 | number :'3.2-2'}}
+</h3>
+
+<h4>{{20 | currency :'INR'}}</h4>
